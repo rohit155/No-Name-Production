@@ -3,10 +3,6 @@ AOS.init({
     duration: 1000
 });
 
-
-
-
-
 //Get the button
 var button = document.getElementById("buttonTop");
 
@@ -28,3 +24,13 @@ function topFunction() {
   document.documentElement.scroll({ top: 0, left: 0, behavior: 'smooth' });
 }
 
+/* To Disable Inspect Element */
+$(document).bind("contextmenu",function(e) {
+  e.preventDefault();
+ });
+ 
+ $(document).keydown(function(e){
+     if(e.which === 123){
+        return false;
+     }
+ });
