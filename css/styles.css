@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+:root {
+    --redColor : #d92027;
+    --whiteColor : #ededed;
+    --blackColor : #333333;
+    --purpleColor : #726a95;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "scroll-behavior:smooth";
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+.container-fluid {
+    padding: 0 12%;
+}
+
+.circle1 {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    bottom: 0;
+    left: 0;
+    /* opacity: 0.3; */
+    z-index: 0;
+}
+.circle1::before {
+    content: '';
+    transform: translate(-20%, 40%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    border-radius: 50%;
+    background-color: var(--purpleColor);
+}
+
+.circle2 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-color: var(--redColor);
+    opacity: 0.2;
+    z-index: 0;
+    top: 0;
+    left: 35vw;
+    border-radius: 50%;
+}
+
+.circle3 {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    background-color: var(--purpleColor);
+    opacity: 0.2;
+    z-index: 0;
+    top: 10vw;
+    right: 8vw;
+    border-radius: 50%;
+}
+
+/* ########### back to top button ############  */
+.buttonTop {
+    /* display: none; */
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 10;
+    font-size: 3rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.topIcon {
+    color: var(--purpleColor);
+}
+.topIcon:hover {
+    opacity: 0.7;
+}
+
+
+/* ----------------navigation bar --------------------- */
+
+.main-header .container-fluid {
+    padding: 0 10%;
+}
+.main-header .navbar{
+    background-color: var(--blackColor);
+    /* position: relative; */
+}
+.main-header .nav-item .nav-link {
+    color: var(--whiteColor);
+    padding: 0.5rem 1rem;
+}
+.main-header .nav-item .nav-link:hover , .main-header .active .nav-link {
+    color: var(--purpleColor);
+}
+
+.header-divider {
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid var(--purpleColor);
+}
+
+
+/* ------------------------Main Section / Hero Section START---------------------------- */
+
+#hero-section {
+    background-color: var(--blackColor);
+    overflow: hidden;
+}
+.hero-section {
+    position: relative;
+    height: 90vh;
+}
+.hero-section .heroTitle {
+    font-size: 5rem;
+    font-family: 'Nosifer', cursive;
+    letter-spacing: 0.5rem;
+    color: var(--whiteColor);    
+    text-shadow: 6px 4px 2px #000000;
+    z-index: 2;
+}
+.hero-section .heroSubTitle {
+    font-weight: 900;
+    /* color: var(--whiteColor); */
+    background: -webkit-linear-gradient(var(--whiteColor), var(--purpleColor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    z-index: 2;
+}
+.hero-section .heroSectionLine {
+    text-decoration: line-through var(--redColor) solid;
+}
+.hero-section .heroImage {
+    position: relative;
+    /* opacity: 0.8; */
+    max-height: 80vh;
+    z-index: 1;
+}
+/* ------------------------Main Section / Hero Section END---------------------------- */
+
+/* -----------------------------Work Section START-------------------------------- */
+
+#work-section {
+    background-color: var(--whiteColor);
+    padding: 6% 0;
+}
+.work-border {
+    padding: 2rem 0;
+    margin: 0;
+    border-bottom: 2px solid var(--blackColor);
+}
+.workSectionTitle p {
+    color: var(--blackColor);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+.workSectionTitle h1 {
+    color: var(--purpleColor);
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    margin: 0 0 5rem;
+}
+.work-section .main-icon {
+    font-size: 3rem;
+}
+.work-section .card {
+    min-width: 17rem;
+    max-width: 18rem;
+    height: auto;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    box-shadow: 5px 10px 10px var(--purpleColor);
+}
+.work-section .work-icon {
+    font-size: 5rem;
+    color: var(--purpleColor);
+}
+
+.work-section .workYT-Title h2 {
+    color: var(--purpleColor);
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    margin: 5rem 0 4rem;
+}
+.work-section .workYT-icon {
+    font-size: 2rem;
+}
+
+/* -----------------------------Work Section END-------------------------------- */
+
+/* ----------------------------------About Section START------------------------------ */
+
+#about-section {
+    background-color: var(--blackColor);
+    padding: 6% 0;
+    position: relative;
+    overflow: hidden;
+}
+.aboutSectionTitle h6 {
+    color: var(--whiteColor);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+.aboutSectionTitle h1 {
+    color: var(--purpleColor);
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    margin: 0 0 5rem;
+}
+.about-section .about-icon {
+    font-size: 3rem;
+}
+.about-section img {
+    width: 40vw;
+    padding: 0 4%;
+}
+.about-section p {
+    color: var(--whiteColor);
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    padding: 1rem;
+}
+
+/* ----------------------------------About Section END------------------------------ */
+
+/* ------------------------------------Contact Section START---------------------------------- */
+
+#contact-section {
+    background-color: var(--whiteColor);
+    padding: 6% 0;
+}
+.contact-section h1 {
+    color: var(--purpleColor);
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    margin: 0 0 5rem;
+}
+.contact-section .contact-icon {
+    font-size: 3rem;
+}
+.contact-section .form-group {
+    background-color: var(--blackColor);
+    width: 100%;
+    height: 100%;
+    padding: 2rem 4rem;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+}
+
+.contact-section .input-group {
+    margin-bottom: 2rem;
+    flex-direction: column;
+    color: var(--whiteColor);
+}
+.contact-section .input-group:last-child {
+    margin-bottom: 0;
+}
+.contact-section .input-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.contact-section .input-group input {
+    outline: none;
+    background: none;
+    color: var(--whiteColor);
+    border: 1px solid var(--whiteColor);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.contact-section .input-group input:focus {
+    /* outline: none; */
+    border-color: var(--purpleColor);
+}
+.contact-section button {
+    color: var(--whiteColor);
+    background-color: var(--purpleColor);
+    padding: 0.8rem 1.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    opacity: 1;
+}
+.contact-section button:hover {
+    opacity: 0.8;
+}
+
+/* ------------------------------------Contact Section END---------------------------------- */
+
+/* --------------------------------------footer START--------------------------------------- */
+
+#footer {
+    padding: 6% 0;
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+}
+.footer a {
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+.footer .social-link {
+    padding: 1rem 1.5rem;
+    font-size: 2.5rem;
+}
+.footer .instagram:hover {
+    color: #F77737;
+}
+.footer .youtube:hover {
+    color: #FF0000;
+}
+.footer .developer {
+    color: var(--purpleColor);
+}
+.footer .developer:hover {
+    opacity: 0.8;
+}
+
+/* --------------------------------------footer START--------------------------------------- */
+
+
+
+
+
+
+
+/* ######################################################################################## */
+/* -----------------------------------Media Queries--------------------------------------- */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) { 
+    .container-fluid {
+        padding: 0 5%;
+    }
+    .main-header .container-fluid {
+        padding: 0;
+    }
+
+ /* ------------------------Main Section / Hero Section---------------------------- */
+    .hero-section .heroTitle {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        padding: 0;
+    }
+    .hero-section .heroSubTitle {
+        font-size: 0.8rem;
+    }
+
+/* -----------------------------Work Section START-------------------------------- */
+.workSectionTitle h1 {
+    font-size: 1.4rem;
+    margin: 0 0 1rem;
+}
+.work-section .main-icon {
+    font-size: 1.4rem;
+}
+.work-section .workYT-Title h2 {
+   font-size: 1.4rem;
+   margin: 4rem 0 3rem;
+}
+.work-section .workYT-icon {
+    font-size: 1.4rem;
+}
+
+/* ----------------------------------About Section START------------------------------ */
+    .about-section img {
+        width: 95vw;
+    }
+    .about-section p {
+        font-size: 1rem;
+    }
+    .aboutSectionTitle h1 {
+        font-size: 1.2em;
+        margin: 0 0 4rem;
+    }
+    .about-section .about-icon {
+        font-size: 1.4rem;
+    }
+
+/* ------------------------------------Contact Section START---------------------------------- */
+    .contact-section h1 {
+        font-size: 1.4rem;
+        margin: 1rem 0 2rem;
+    }
+    .contact-section .contact-icon {
+        font-size: 1.4rem;
+    }  
+    .contact-section .form-group {  
+        padding: 1rem 2rem;
+        height: auto;
+    }
+    .contact-section .input-group label {
+        margin-bottom: 0.4rem;
+    }
+
+/* --------------------------------------footer START--------------------------------------- */
+    .footer .social-link {
+        font-size: 2rem;
+    }
+    .footer p {
+        font-size: 1rem;
+    }
+
+}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 768px) { 
+/* ------------------------Main Section / Hero Section---------------------------- */
+    .hero-section .heroTitle {
+        font-size: 3.5rem;
+        line-height: 5rem;
+    }
+    .hero-section .heroSubTitle {
+        font-size: 1.5rem;
+    }
+    .hero-section .heroImage {
+        height: 50vh;
+    }
+
+/* -----------------------------Work Section START-------------------------------- */
+.workSectionTitle h1 {
+        font-size: 2rem;
+        margin: 0 0 1rem;
+    }
+    .work-section .main-icon {
+        font-size: 2rem;
+    }
+/* ----------------------------------About Section START------------------------------ */
+  .about-section p {
+    padding: 2rem;
+   }
+  .about-section img {
+    width: 78vw;
+  }
+
+}
+
+
+
+/* ############################// Medium devices (tablets, less than 992px)###################### */
+@media (max-width: 1024px) { 
+/* ------------------------Main Section / Hero Section---------------------------- */
+    .hero-section {
+        height: auto;
+    }
+    .hero-section .heroTitle {
+        padding-top: 1.5rem;
+    }
+    .hero-section .heroImage {
+        height: 40vh;
+    }
+/* ----------------------------------About Section START------------------------------ */
+  .about-section p {
+    padding: 2rem 0;
+  }
+  .about-section img {
+    border-radius: 0.1rem;
+    padding: 0 2%;
+  }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) { 
+
+} */
